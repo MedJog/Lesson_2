@@ -2,14 +2,29 @@
 
 Console.Clear();
 Console.WriteLine("Введите число: ");
-int num = int.Parse(Console.ReadLine());
-if (num < 100 && num > -100) {
+int a = int.Parse(Console.ReadLine());
+int i = 0;
+int j = 0;
+int b = a;
+if (a < 100 && a > -100) 
+{
     Console.WriteLine("Третьей цифры нет");
 }
-else {
-    
+else 
+{
+while (b >= 1)
+{
+    b = b / 10;
+    i++;
 }
+Console.WriteLine(i);
+}
+while (j < i-3)
+{
+    a = a / 10;
+  //  Console.WriteLine(a);
+    j++;
+}
+a = a % 10;
 
-
-
-// Console.WriteLine("");
+ Console.WriteLine(a); 
