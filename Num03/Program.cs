@@ -3,16 +3,16 @@ Console.Clear();
 Console.WriteLine("Введите число: ");
 int a = int.Parse(Console.ReadLine());
 
-if (a < 1 || a > 7) 
+if (a < 1 || a > 7)  // Определяем параметры некорректного ввода числа
 {
     Console.WriteLine("Введите другое число.");
 }
-if (a > 0 && a < 6) 
+if (a > 0 && a < 6) // Для будних дней
 {
     Console.WriteLine("Этот день не является выходным.");
 } 
 
-if ( a == 6 || a == 7) 
+if ( a == 6 || a == 7) // Для выходных дней
 {
 Console.WriteLine("Да, это выходной день!");
 }
