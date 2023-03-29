@@ -6,25 +6,25 @@ int a = int.Parse(Console.ReadLine());
 int i = 0;
 int j = 0;
 int b = a;
-if (a < 100 && a > -100) 
+if (a < 100 && a > -100)  // Если число двухзначное, то...
 {
-    Console.WriteLine("Третьей цифры нет");
+    Console.WriteLine("Третьей цифры нет"); // Вывод на экран...
 }
 else 
 {
-while (b >= 1)
+while (b >= 1) // Находим количество цифр в числе
 {
     b = b / 10;
     i++;
 }
-Console.WriteLine(i);
+Console.WriteLine(i); // Вывод количества цифр на экран
 }
-while (j < i-3)
+while (j < i-3) // Находим первые три цифры заданного числа
 {
     a = a / 10;
   //  Console.WriteLine(a);
     j++;
 }
-a = a % 10;
+a = a % 10;   // Находим третью цифру заданного числа
 
- Console.WriteLine(a); 
+ Console.WriteLine(a);  // Вывод третьей цифры заданного числа на экран
